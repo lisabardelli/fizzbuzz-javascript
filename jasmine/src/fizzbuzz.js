@@ -14,4 +14,21 @@ class Javabuzz {
     _isDivisibleby(number, divisor) {
         return (number % divisor === 0);
     }
+    
+
+    play(number) {
+        if(this.isDivisiblebyBoth(number)){
+        return "Fizzbuzz"
+        }
+        else if (this.isDivisiblebyFive(number)){
+        return "buzz"
+        }
+        else if (this.isDivisibleByThree(number)){
+        return "fizz"
+        }
+        else{
+            return number
+        }
+    }
 }
+

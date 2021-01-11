@@ -27,5 +27,14 @@ describe ("Javabuzz",function(){
         it('fizz for numbers divisible by 3', function() {
             expect(javabuzz.play(6)).toBe('fizz');
         });
+        it('buzz for numbers divisible by 5', function(){
+            expect(javabuzz.play(10)).toBe('buzz')
+        });
+        it('Fizzbuzz for numbers divisible by both 3 and 5', function(){
+            expect(javabuzz.play(15)).toBe('Fizzbuzz')
+        });
+        it('number for numbers not divisible by 3 or 5', function(){
+            expect(javabuzz.play(14)).toBe(14)
+        });
     });
 });
